@@ -1,6 +1,10 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 
+const CounterDisplay = ({ count }) => {
+    return <p>{count}</p>
+}
+
 class CounterApp extends React.Component {
     constructor(props) {
         super(props)
