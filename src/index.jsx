@@ -50,7 +50,9 @@ class CounterApp extends React.Component {
     render() {
         return (
             <div>
-                <p>TODO: selesaikan komponennya!</p>
+                <IncreaseButton increase={this.onIncreaseEventHandler} />
+                <CounterDisplay count={this.state.count} />
+                <ResetButton reset={this.onResetEventHandler} />
             </div>
         )
     }
