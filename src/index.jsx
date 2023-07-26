@@ -13,6 +13,14 @@ const IncreaseButton = ({ increase }) => {
     )
 }
 
+const ResetButton = ({ reset }) => {
+    return (
+        <div>
+            <button onClick={reset}>- reset</button>
+        </div>
+    )
+}
+
 class CounterApp extends React.Component {
     constructor(props) {
         super(props)
