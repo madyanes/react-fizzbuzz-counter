@@ -29,6 +29,10 @@ class CounterApp extends React.Component {
         this.state = {
             count: 0,
         }
+
+        // binding event handler
+        this.onIncreaseEventHandler = this.onIncreaseEventHandler.bind(this)
+        this.onResetEventHandler = this.onResetEventHandler.bind(this)
     }
 
     onIncreaseEventHandler() {
